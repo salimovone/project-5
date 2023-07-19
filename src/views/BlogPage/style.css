@@ -1,0 +1,11 @@
+.blogPage{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .blogPage{
+        grid-template-columns: 1fr;
+    }
+}

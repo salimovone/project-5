@@ -1,13 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.active {
+  color: #0033c7;
+}
+
+.w-full > .max {
+  max-width: 1366px;
+  margin: auto;
+  padding-inline: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .w-full > .max {
+    padding-inline: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .w-full > .max {
+    padding-inline: 20px;
+  }
+}
+
+.head-slide {
+  height: calc(100vh - 70px) !important;
+}
+
+.inside-slide {
+  height: calc(100vh - 70px) !important;
+}
+
+.inside-image {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  height: 100%;
+}
+
+.overSlide {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.p6 {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.p5 {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+}
+
+@media screen and (max-width: 765px) {
+  .service-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+.project-card img {
+  transition: all 0.5s ease;
+}
+.project-card * {
+  transition: all 0.5s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.5);
+}
+
+.project-card:hover .-overlay {
+  background-color: #0033c7cc;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project-card .-overlay > div {
+  position: absolute;
+  top: -600px;
+}
+/* @media screen and (max-width: 1024px) {
+  top: -100px;
+} */
+.project-card:hover .-overlay > div {
+  position: absolute;
+  top: 50px;
+}
+
+.project-card .-overlay > button {
+  position: absolute;
+  bottom: -50px;
+}
+.project-card:hover .-overlay > button {
+  position: absolute;
+  bottom: 50px;
+}
+
+.teamCard {
+  height: 420px;
+}
+
+.teamCard > .team-card-body {
+  transition: all linear 0.3s;
+  margin-top: -7rem;
+  height: 200px;
+}
+
+.teamCard:hover > .team-card-body {
+  height: 250px;
+}
+
+.teamCard .team-card-text {
+  opacity: 0;
+}
+.teamCard:hover .team-card-text {
+  transition: all linear 0.3s;
+  opacity: 1;
+}
+
+.client-logo:hover {
+  transition: all linear 0.3s;
+  box-shadow: 0px 0px 39px -17px rgba(0, 0, 0, 0.75);
 }
