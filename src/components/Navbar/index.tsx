@@ -55,7 +55,7 @@ const Navbar = () => {
           <div className="flex gap-8 text-[#000] items-center text-[16px]">
             <div>
               <NavLink
-                className={({ isActive }) => isActive && "active"}
+                className={({ isActive }:{isActive: boolean}) : string => isActive ? "active": ""}
                 to={"/"}
               >
                 Home
@@ -104,7 +104,7 @@ const Navbar = () => {
               <div className="text-[#645f88bf] text-[16px]">
                 <div className="mt-1">
                   <NavLink
-                    className={({ isActive }) => isActive && "active"}
+                    className={({ isActive }:{isActive: boolean}) : string => isActive ? "active": ""}
                     to={"/"}
                   >
                     Home

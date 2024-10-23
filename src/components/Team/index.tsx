@@ -3,7 +3,7 @@ import Title from "../Title";
 import { data, lessData } from "./data";
 import Card from "./Card";
 
-const Team = ({ big }) => {
+const Team = ({ big } : {big?: boolean}) => {
   let arr = big ? data : lessData;
 
   return (

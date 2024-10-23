@@ -1,16 +1,22 @@
 import React, { useEffect, useRef } from "react";
 
-const Count = ({ num, name }) => {
+type countProp = {
+  num: number,
+  name: string
+}
+
+const Count = ({ num, name }:countProp) => {
   const countupRef = useRef(null);
   let countUpAnim;
 
   useEffect(() => {
     initCountUp();
+    // eslint-disable-next-line
   }, []);
 
   async function initCountUp() {
     const countUpModule = await import("countup.js");
-    countUpAnim = new countUpModule.CountUp(countupRef.current, num);
+    countUpAnim = new countUpModule.CountUp(countupRef.current!, num);
     if (!countUpAnim.error) {
       countUpAnim.start();
     } else {

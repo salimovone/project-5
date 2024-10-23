@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import img from "../../assets/images/bg_3.jpg";
 
-const Intro = ({name, className}) => {
+type prop = {
+  name: string,
+  className?: string
+}
+
+const Intro = ({name, className} : prop) => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {

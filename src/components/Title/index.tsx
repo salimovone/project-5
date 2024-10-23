@@ -1,6 +1,13 @@
 import React from "react";
 
-const Title = ({ name, title, desc, className }) => {
+type prop = {
+  name?: string,
+  title?: string,
+  desc?: string,
+  className?: string
+}
+
+const Title = ({ name, title, desc, className } : prop) => {
   return (
     <div data-aos="fade-up" className={`max-w-[800px] mt-10 ${className}`}>
       <div className="w-full flex items-center">

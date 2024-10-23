@@ -3,7 +3,11 @@ import React from "react";
 import { data, lessData } from "../../views/BlogPage/data";
 import { Link } from "react-router-dom";
 
-const Cards = ({ big }) => {
+type prop = {
+  big?: string
+}
+
+const Cards = ({ big }:prop) => {
   let arr = big ? data : lessData;
 
   return (

@@ -2,9 +2,8 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineGooglePlus } from "react-icons/ai";
 import { CgFacebook } from "react-icons/cg";
 import { AiOutlineTwitter } from "react-icons/ai";
-import React from "react";
 
-const Card = ({ img }) => {
+const Card = ({ img } : {img: string}) => {
   return (
     <div data-aos="fade-up" className="teamCard flex flex-col justify-between mb-32 max-md:mb-96 max-sm:mb-20">
       <img src={img} alt="" className="" />

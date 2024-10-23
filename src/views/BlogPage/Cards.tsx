@@ -3,7 +3,7 @@ import React from "react";
 import { data, lessData } from "./data";
 import { Link } from "react-router-dom";
 
-const Cards = ({ big }) => {
+const Cards = ({ big }:{big: boolean}) => {
   let arr = big ? data : lessData;
 
   return (

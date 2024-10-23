@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { data } from "./data";
 
-const Carousel = ({ className }) => {
+const Carousel = ({ className } : {className?:string}) => {
   return (
     <Swiper
       className={`${className} mt-10`}

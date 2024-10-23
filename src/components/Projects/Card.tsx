@@ -1,7 +1,13 @@
 import { AiOutlineExpandAlt } from "react-icons/ai";
 import React from "react";
 
-const Card = ({ img, func, imgId }) => {
+type prop = {
+  img: string,
+  func: any,
+  imgId: number
+}
+
+const Card = ({ img, func, imgId }:prop) => {
   return (
     <div data-aos="fade-up" className="relative w-full project-card overflow-hidden">
       <img src={img} alt="" className="" />

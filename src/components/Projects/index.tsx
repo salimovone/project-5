@@ -5,13 +5,17 @@ import Card from "./Card";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-const Projects = ({ big }) => {
+type prop = {
+  big? : boolean
+}
+
+const Projects = ({ big } : prop) => {
   let arr = big ? data : lessData;
 
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
-  const gallery = (id) => {
+  const gallery = (id:number) : void => {
     setOpen(true);
     setIndex(id);
   };

@@ -158,7 +158,7 @@ const BlogPage = () => {
             <input type="text" id="name" className="border bg-white w-full outline-black mt-5 mb-9 h-[52px]" />
 
             <label htmlFor="Message" className="mb-3">Message</label>
-            <textarea type="text" id="name" className="border bg-white w-full outline-black mt-5 mb-9 h-[200px]" />
+            <textarea id="name" className="border bg-white w-full outline-black mt-5 mb-9 h-[200px]" />
 
             <button className="bg-[#0033c7] text-white border border-[#0033c7] hover:bg-white hover:text-[#0033c7] rounded-full px-[24px] py-[16px]">Post Comment</button>
           </form>

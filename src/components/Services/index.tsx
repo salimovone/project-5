@@ -1,4 +1,3 @@
-import React from "react";
 import Title from "../Title";
 import { data } from "./data";
 import Card from "./Card";

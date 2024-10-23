@@ -11,10 +11,10 @@ import BlogSingle from "./views/BlogSingle";
 import Contact from "./views/Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import Spinner from "./components/Spinner";
 
-function App() {
+function App() : React.JSX.Element {
   useEffect(() => {
     AOS.init();
   }, []);

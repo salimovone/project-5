@@ -1,4 +1,3 @@
-import React from "react";
 import Title from "../Title";
 import img from "../../assets/images/bg_3.jpg";
 

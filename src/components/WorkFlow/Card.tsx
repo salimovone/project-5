@@ -1,7 +1,6 @@
 import { IoMdArrowDropright } from "react-icons/io";
-import React from "react";
 
-const Card = ({ icon, name }) => {
+const Card = ({ icon, name }: {icon: React.ReactNode, name: string}) => {
   return (
     <div data-aos="fade-up">
       <div className="w-full flex justify-between relative items-center -z-50">
